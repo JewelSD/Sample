@@ -1,10 +1,13 @@
-def palin():
-    word=input("Enter the word:")
-    pali=word[::-1]
-    result=word==pali
+def amstrong():
+    num=int(input("Enter the number:"))
+    num1=str(num)
+    length=len(num1)
+    res=sum(int(digit)**length for digit in num1)
+    print (res)
+    result=num==res
     if(result):
-        print(f"{word} is palindrome")
+        print("The number is amstrong")
     else:
-        print(f"{word} is not palindrome")
+        print("Not amstrong")
 
-palin()
+amstrong()
