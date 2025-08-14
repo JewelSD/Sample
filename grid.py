@@ -1,10 +1,10 @@
 def palin():
-    word=input("Enter the word to check:")
-    pali=word[::-1]
-    result=word==pali
+    done=input("Enter the word:")
+    pali=done[::-1]
+    result=done==pali
     if(result):
-        print(f"{word} is palindrome")
+        print(f"{done} is palindrome")
     else:
-        print(f"{word} is not palindrome")
+        print(f"{done} is not palindrome")
 
 palin()
